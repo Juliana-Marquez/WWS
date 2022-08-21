@@ -57,8 +57,27 @@
 #section-about3 p{
     border-radius: 20px;
     color: white;
-    background-color: antiquewhite;
-}  
+    background-image: radial-gradient(circle, rgba(75,206,232,0.8536585365853658) 0%, rgba(52,144,214,0.924119241192412) 100%);
+    animation: hey 3s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hey{
+    30%{
+        background-image:  linear-gradient(to left, rgba(107,161,255,1) 0%, rgba(88,244,255,1) 100%);
+    }  
+    
+    50%{
+        background-image:  linear-gradient(to right, rgba(107,161,255,1) 0%, rgba(88,244,255,1) 100%);
+    }
+    
+    100%{
+        background-image: radial-gradient(circle, rgba(75,206,232,0.8536585365853658) 0%, rgba(52,144,214,0.924119241192412) 100%);
+    }
+}
+
 
 /*grid travel destinations*/
 #contenedor-travel{
@@ -146,13 +165,19 @@ padding: 10px;
 }
 
 .formato-interesa{
-    background-color:#3890cf;
+    background-image: linear-gradient(to right, rgba(107,161,255,1) 0%, rgba(88,244,255,1) 100%);
     padding: 15px;
     color: white;
     border-radius: 20px;
     text-decoration: none;
+    transition: padding 1s;
 
 }
+
+.formato-interesa:hover{
+    padding: 20px;
+}
+
 
 
 /*grid  contacto*/
@@ -238,6 +263,11 @@ nav ul li a {
     font-weight: bold;
     border-radius: 30px;
     padding: 25px;
+    transition: padding 0.7s;
+}
+
+.formato-learn a:hover{
+    padding:30px;
 }
 
 
@@ -263,20 +293,21 @@ aside{
 
 /* para demas titulos del sitio */
 .contenido-intro {
-    background-color: #3890cf;
+    background-image: radial-gradient(circle, rgba(146,87,187,0.8536585365853658) 17%, rgba(236,78,199,0.9132791327913279) 100%);
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    border: dashed 2px;
+    border: dashed 2px rgba(146,87,187,0.8536585365853658);
 }
 
 /* para textos descriptivos del sitio */ 
 .contenido-texto {
-    background-color: #3890cf;
+    background-image: linear-gradient(to bottom,rgb(215, 109, 197) 0%, rgba(255,158,232,1) 100%);
     font-weight: 400;
     line-height: 2.3;
     text-align: justify;
 }
+
 
 /* acceso directo a red social */
 .insta {
